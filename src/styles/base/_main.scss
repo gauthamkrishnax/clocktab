@@ -1,0 +1,140 @@
+
+*{
+    box-sizing: border-box;
+}
+html, body {
+    background-color: gray;
+}
+#root {
+    min-height: 100vh;
+    background-image: url('../../assets/day-bg (1).jpg');
+    background-size: cover;
+    background-position: 0% 100%;
+    padding: 4em 6em;
+    @media (max-width:720px) {
+        padding: 2em 3em;
+    }
+}
+
+.vertical-stack {
+    display: flex;
+    flex-direction: column;
+}
+
+.vertical-stackspace {
+    @extend .vertical-stack;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.time-module {
+    @extend .vertical-stack;
+    max-width: 560px;
+    @media (max-width:1280px) {
+        max-width: 250px;
+    }
+}
+
+.stack {
+   display: flex;
+}
+.center {
+    align-items: center;
+    justify-content: space-between;
+}
+.bottom {
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.time-module {
+    svg {
+        margin-right: 10px;
+    }
+}
+hr{
+    border-color: $primary-color;
+    width: 100%;
+    margin: 0 8px;
+}
+
+.sidebar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 400px;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.50);
+    backdrop-filter: blur(20.0px) brightness(140%);
+    -webkit-backdrop-filter: blur(20.0px) brightness(140%);
+    color: $secondary-dark;
+    justify-content: space-between;
+    align-items: center;
+    @media  (max-width : 1280px) {
+        width: 100%;
+        top: auto;
+        bottom: 0;
+        height: 200px;
+    }
+    hr {
+         border-color: rgba(0, 0, 0, 0.30);
+         width: 100%;
+         margin: 4px 8px;
+    }
+}
+
+
+.weather {
+    img {
+        width: 80px;
+        @media (max-width:1280px) {
+            width: 50px;
+        }
+    }
+    p {
+         @media (max-width:1280px) {
+            font-size: .8rem;
+        }
+    }
+    @media (max-width:1280px) {
+        margin-bottom: 20px;
+    }
+} 
+
+.pair {
+    @extend .vertical-stack;
+    align-items: center;
+    h2{
+        font-size: 1.2rem;
+        @media (max-width:1280px) {
+            font-size: .8rem;
+        }
+    }
+    p {
+        margin-top: 10px;
+        font-size: 2rem;
+        font-weight: 600;
+        @media (max-width:1280px) {
+            font-size: 2rem;
+        }
+    }
+    sup {
+        vertical-align: super;
+        font-size: small;
+    }
+}
+.footer {
+    font-size: 0.6rem;
+    letter-spacing: 0px;
+    margin-bottom: 4px;
+}
+
+.info {
+    height: 60%;
+
+    @media (max-width: 1280px) {
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+    }
+}
