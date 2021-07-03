@@ -1,0 +1,22 @@
+@mixin vendorPrefix($prop, $value) {
+    -webkit-#{$prop}: #{$value};
+    -moz-#{$prop}: #{$value};
+    -ms-#{$prop}: #{$value};
+    -o-#{$prop}: #{$value};
+    #{$prop}: #{$value};
+}
+
+@mixin breakpoint($point) {
+    @if $point==medium {
+        @media only screen and (max-width: 1024px) {
+            @content;
+        }
+    }
+
+    @else if $point==small {
+        @media only screen and (max-width: 768px) {
+            @content;
+        }
+    }
+
+}
