@@ -11,7 +11,6 @@ let formatZoneText = (str) => {
 };
 
 const useGetTimeInfoByMinute = () => {
-  console.log("1");
   let [minute, setMinute] = useState(DateTime.now().minute);
 
   //CURRENT TIME
@@ -19,9 +18,7 @@ const useGetTimeInfoByMinute = () => {
 
   //CHECK EVERY SECOND -> RERENDER ON CHANGE IN MINUTE
   useEffect(() => {
-    console.log("2");
     const timer = setInterval(() => {
-      console.log("3");
       setMinute(DateTime.now().minute);
     }, 1000);
     return () => clearInterval(timer);

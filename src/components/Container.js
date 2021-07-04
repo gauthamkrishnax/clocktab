@@ -2,7 +2,6 @@ import Pair from "./Pair";
 import Wish from "./Wish";
 
 const Container = ({ time }) => {
-  console.log(time);
   const changeTheme = () => (time.theme === "light" ? "light" : "dark");
   return (
     <div className={`container ${changeTheme()}`}>
@@ -26,7 +25,7 @@ const Container = ({ time }) => {
         </div>
       </div>
       {/* DATE MODULE - ALL TOGETHER STACK  */}
-      <div className="dateModule">
+      <div className={`dateModule ${changeTheme()}`}>
         {/* DAY  - NAME*/}
         <h3>{time.dayName}</h3>
         <div className="horizontalCenter">

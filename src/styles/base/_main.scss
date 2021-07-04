@@ -8,7 +8,8 @@ html {
 
 hr {
     width: 100%;
-    border-color: $colorSecondary;
+    border: none;
+    border-top: $colorSecondary solid 1px;
     margin: 0 5px;
 }
 
@@ -112,6 +113,16 @@ div.container.dark {
 
 }
 
+div.dateModule.light {
+    color: $colorPrimaryDark;
+    opacity: 0.7;
+}
+
+div.dateModule.dark {
+    color: $colorPrimaryLight;
+    opacity: 0.7;
+}
+
 .month {
     border-left: 1px solid $colorSecondary;
     border-right: 1px solid $colorSecondary;
@@ -156,13 +167,17 @@ div.container.dark {
 
     img {
         width: 40px;
+        height: 40px;
+        @include vendorPrefix(filter, brightness(250%));
 
         @include breakpoint(medium) {
             width: 30px;
+            height: 30px;
         }
 
         @include breakpoint(small) {
             width: 20px;
+            height: 20px;
         }
     }
 
