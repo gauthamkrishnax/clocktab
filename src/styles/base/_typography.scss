@@ -49,7 +49,8 @@ h3 {
     }
 }
 
-h4 {
+h4,
+p.zone {
     font-size: 1.2rem;
     letter-spacing: 5px;
 
@@ -59,7 +60,8 @@ h4 {
     }
 }
 
-h5 {
+h5,
+p.pairHeading {
     letter-spacing: 5px;
 
     @include breakpoint(small) {

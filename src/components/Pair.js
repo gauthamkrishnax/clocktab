@@ -1,7 +1,7 @@
 const Pair = ({ heading, value }) => {
   return (
     <div className="verticalCenter">
-      <h5>{heading} </h5>
+      <p className="pairHeading">{heading} </p>
       <h3>{value}</h3>
     </div>
   );

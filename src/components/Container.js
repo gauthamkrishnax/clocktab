@@ -21,7 +21,7 @@ const Container = ({ time }) => {
         {/* LOCATION - BOTTOM */}
         <div className="horizontalCenter">
           <hr />
-          <h4>{time.zone}</h4>
+          <p className="zone">{time.zone}</p>
         </div>
       </div>
       {/* DATE MODULE - ALL TOGETHER STACK  */}

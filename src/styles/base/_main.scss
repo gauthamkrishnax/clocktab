@@ -4,6 +4,7 @@
 
 html {
     background-color: $colorPrimaryDark;
+    animation: hideScroll 1s ease-in;
 }
 
 hr {
@@ -15,6 +16,7 @@ hr {
 
 .app {
     min-height: 100vh;
+    animation: fadeIn .5s ease-in;
 }
 
 .lightBgImage {
@@ -46,6 +48,7 @@ hr {
     justify-content: space-between;
     align-items: center;
     height: 300px;
+    animation: comeDown .5s ease-in;
 
     @include breakpoint(medium) {
         flex-direction: column;
@@ -76,7 +79,14 @@ div.container.dark {
         margin-bottom: 10px;
 
         img {
+            width: 20px;
+            height: 20px;
             margin-right: 10px;
+
+            @include breakpoint(small) {
+                width: 10px;
+                height: 10px;
+            }
         }
     }
 
@@ -101,7 +111,7 @@ div.container.dark {
         margin-bottom: 15px;
     }
 
-    h5 {
+    p {
         margin-bottom: 10px;
     }
 
@@ -152,6 +162,7 @@ div.dateModule.dark {
     position: absolute;
     bottom: 20px;
     left: 20px;
+    animation: comeUp .5s ease-in;
 
     a:last-child {
         margin-right: 0;
@@ -159,16 +170,16 @@ div.dateModule.dark {
 
     a {
         margin-right: 30px;
-
-        &:hover {
-            opacity: 60%;
-        }
     }
 
     img {
         width: 40px;
         height: 40px;
         @include vendorPrefix(filter, brightness(250%));
+
+        &:hover {
+            @include vendorPrefix(filter, brightness(100%));
+        }
 
         @include breakpoint(medium) {
             width: 30px;
@@ -185,5 +196,10 @@ div.dateModule.dark {
         left: 0;
         right: 0;
         text-align: center;
+    }
+
+    @media only screen and (max-height: 420px) {
+        bottom: -40px;
+        padding-bottom: 10px;
     }
 }
