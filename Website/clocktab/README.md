@@ -1,6 +1,6 @@
-# Clock Tab
+# Getting Started with Create React App
 
-A New Tab Extension that displays time.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 

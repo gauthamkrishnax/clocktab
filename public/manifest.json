@@ -2,7 +2,6 @@
   "name": "ClockTab",
   "description": "A New Tab theme that dispays time info.",
   "version": "1.0.0",
-  "permissions": ["tabs"],
   "manifest_version": 2,
   "author": "Gautham Krishna",
   "icons": {
@@ -11,15 +10,11 @@
     "192": "/favicon-192x192.png",
     "512": "/favicon-512x512.png"
   },
+  "chrome_settings_overrides": {
+    "homepage": "./index.html"
+  },
   "chrome_url_overrides": {
     "newtab": "./index.html"
   },
-  "browser_action": {
-    "default_icon": {
-      "16": "/favicon-16x16.png",
-      "32": "/favicon-32x32.png",
-      "192": "/favicon-192x192.png",
-      "512": "/favicon-512x512.png"
-    }
-  }
+  "browser_action": {}
 }
