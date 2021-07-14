@@ -1,0 +1,29 @@
+.header {
+    padding-top: 2em;
+}
+
+.logomark {
+    width: 45px;
+    height: 45px;
+    margin-right: 1em;
+}
+
+.logo {
+    @extend .flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navLinks {
+    @extend .flex;
+    justify-content: center;
+    margin-top: 2em;
+
+    :nth-child(n) {
+        margin-right: 3em;
+    }
+
+    :last-child {
+        margin-right: 0em;
+    }
+}

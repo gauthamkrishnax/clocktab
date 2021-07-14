@@ -1,21 +1,26 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
+import dayss from "./assets/day-ss.jpg";
+import nightss from "./assets/night-ss.jpg";
+
 function App() {
   return (
     <div className="App">
       <Header />
-      <div>
-        <h2>New Tabs That display time and date in a modern layout</h2>
-        <hr />
-        <div>
-          <button>Get it on Edge</button>
-          <button>Source Code</button>
+      <div className="main">
+        <div className="main-content">
+          <h2>New Tabs That display time and date in a modern layout.</h2>
+          <hr />
+          <div className="cta-container">
+            <button className="cta">Get it on Edge</button>
+            <button className="cta-sec">Source Code</button>
+          </div>
         </div>
-      </div>
-      <div>
-        <img src="" alt="" />
-        <img src="" alt="" />
+        <div className="gallery">
+          <img src={nightss} alt="Night theme" className="night" />
+          <img src={dayss} alt="Day theme" className="day" />
+        </div>
       </div>
       <Footer />
     </div>
