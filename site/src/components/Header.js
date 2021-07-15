@@ -9,10 +9,22 @@ const Header = () => {
         <h1>ClockTab</h1>
       </div>
       <ul className="navLinks">
-        <LinkElement name="Features" link="http://www.google.com" />
-        <LinkElement name="Support" link="http://www.google.com" />
-        <LinkElement name="Privacy Policy" link="http://www.google.com" />
-        <LinkElement name="Contribute" link="http://www.google.com" />
+        <LinkElement
+          name="Features"
+          link="https://addons.mozilla.org/en-US/firefox/addon/clocktab/"
+        />
+        <LinkElement
+          name="Support"
+          link="https://github.com/gauthamkrishnax/clocktab/issues"
+        />
+        <LinkElement
+          name="Privacy Policy"
+          link="https://www.freeprivacypolicy.com/live/42b785ad-93f0-4a36-a41c-ab152ec263ca"
+        />
+        <LinkElement
+          name="Contribute"
+          link="https://www.buymeacoffee.com/gauthamkrishna"
+        />
       </ul>
     </div>
   );
