@@ -3,6 +3,7 @@ import Footer from "./components/Footer";
 
 import dayss from "./assets/day-ss.jpg";
 import nightss from "./assets/night-ss.jpg";
+import CtaForBrowser from "./components/CtaForBrowser";
 
 function App() {
   return (
@@ -13,8 +14,14 @@ function App() {
           <h2>New Tabs That display time and date in a modern layout.</h2>
           <hr />
           <div className="cta-container">
-            <button className="cta">Get it on Edge</button>
-            <button className="cta-sec">Source Code</button>
+            <CtaForBrowser />
+            <a
+              href="https://github.com/gauthamkrishnax/clocktab"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <button className="cta-sec">Source Code</button>
+            </a>
           </div>
         </div>
         <div className="gallery">

@@ -98,6 +98,10 @@ hr {
         background-color: rgba(39, 239, 156, 1);
         margin-right: 2em;
 
+        &:disabled {
+            cursor: not-allowed;
+        }
+
         @media only screen and (max-width: 400px) {
             margin-right: 0;
             margin-bottom: 1em;
