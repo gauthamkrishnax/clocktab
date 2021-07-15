@@ -18,9 +18,13 @@ hr {
 .App {
     position: relative;
     margin: 2em;
-    min-height: 90vh;
+    min-height: 95vh;
     border-radius: 20px;
     background-color: #ffffff;
+
+    @media only screen and (max-width: 1420px) {
+        margin: 1em;
+    }
 }
 
 .flex {
@@ -32,19 +36,42 @@ hr {
     width: 100%;
     justify-content: center;
     margin: 6em 0;
+
+    @media only screen and (max-width: 1420px) {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 2em 0;
+    }
 }
 
 .main-content {
     width: 40%;
+
+    @media only screen and (max-width: 1420px) {
+        width: 100%;
+        margin: 0 2em;
+    }
 }
 
 .gallery {
     width: 40%;
     position: relative;
 
+    @media only screen and (max-width: 1420px) {
+        width: 100%;
+        margin-bottom: 4em;
+    }
+
     img {
         width: 500px;
         position: absolute;
+
+        @media only screen and (max-width: 1420px) {
+            margin-top: 1em;
+            position: static;
+            width: 250px;
+        }
     }
 
     .day {
@@ -55,6 +82,7 @@ hr {
     .night {
         right: 0%;
     }
+
 }
 
 .cta-container {
@@ -69,6 +97,11 @@ hr {
     .cta {
         background-color: rgba(39, 239, 156, 1);
         margin-right: 2em;
+
+        @media only screen and (max-width: 400px) {
+            margin-right: 0;
+            margin-bottom: 1em;
+        }
 
         &:hover {
             background-color: rgba(39, 239, 156, 0.5);

@@ -23,4 +23,8 @@ a {
         transform: scale(1.05);
         text-decoration: overline;
     }
+
+    @media only screen and (max-width: 1420px) {
+        letter-spacing: 1px;
+    }
 }
