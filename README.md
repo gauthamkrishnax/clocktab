@@ -2,6 +2,8 @@
 
 A New Tab Extension that displays time.
 
+## [VISIT SITE->](https://clocktabs.netlify.app/)
+
 ## Available Scripts
 
 In the project directory, you can run:
